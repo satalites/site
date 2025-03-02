@@ -1,7 +1,71 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+const imageSrc = "/DSC_9375.jpg";
 ---
+
 <BaseLayout pageTitle="Cait Nguyen">
-  <h1>AAAAAAAA.</h1>
-  <p>something goes here</p>
+  <section class="home-content">
+    <div class="text-content">
+      <h1>Hello, world! My name is Cait Nguyen.</h1>
+      <p>I am a third year undergraduate student at the UCLA Samueli School of Engineering and Applied Sciences. I study electrical engineering, and I am currently a Lead Technician at the UCLA Makerspace and student instructor for the school of engineering.</p>
+	  <p>My resume is available upon request!</p>
+    </div>
+    <img src={imageSrc} alt="">
+  </section>
+
+  <hr class="section-divider">
+
+  <section class="home-content">
+	<div class="text-content">
+    	<h1>Greetings from Westwood, California!</h1>
+    	<p>This is another body of text that comes after the first section.</p>
+	</div>
+	</section>
+
+  <style>
+	h1{
+		margin: 0rem;
+	}
+	.section-divider {
+      width: 100%;
+      margin: 0rem 0;
+      border: none;
+      height: 2px;
+      background-color: #ccc; /* Darker line between sections */
+    }
+    .home-content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+
+    .text-content {
+      flex: 1;
+	  font-size: 1.25rem;
+      text-align: left;
+    }
+
+    .home-content img {
+      max-width: 50%;
+      height: auto;
+      object-fit: cover;
+      border-radius: 10px; /* styling */
+    }
+
+    /* stack on smaller screens */
+    @media (max-width: 768px) {
+      .home-content {
+        flex-direction: column-reverse;
+        text-align: center;
+      }
+
+      .home-content img {
+        max-width: 100%;
+      }
+    }
+  </style>
 </BaseLayout>

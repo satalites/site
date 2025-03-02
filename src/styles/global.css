@@ -1,6 +1,6 @@
 
 html {
-    background-color: #e5ece5;
+    background-color: #ece6e5;
     font-family: serif;
   }
   
@@ -17,24 +17,15 @@ html {
   }
   
   h1 {
-    margin: .5rem;
+    margin: 1rem;
     font-size: 2.5rem;
   }
 
+  p{
+    margin: 1rem;
+  }
+
 /* nav styles */
-.hamburger {
-    padding-right: 20px;
-    cursor: pointer;
-  }
-  
-.hamburger .line {
-    display: block;
-    width: 40px;
-    height: 5px;
-    margin-bottom: 10px;
-    background-color: #202921;
-  }
-  
   nav ul {
     list-style: none;
     display: flex;
@@ -49,9 +40,57 @@ html {
   nav a:hover {
     text-decoration: underline;
   }
+  
+  .nav-links a:hover,
+  .nav-links a:focus {
+    color: rgb(224, 232, 224)
+  }
+  
+    .nav-links {
+      margin-left: 5em;
+      margin: 1rem;
+      display: flex;
+      gap: 1rem; 
+      flex-direction: row;
+      position: static;
+      align-items: center;
+      width: auto;
+      background: none;
+    }
+  
+    .nav-links a {
+        display: block;
+        text-align: center;
+        padding: 0px 0px;
+        text-decoration: none;
+        font-size: 1.5rem;
+        font-weight: bold;
+        text-transform: none;
+    }
 
-.nav-links {
+    @media (max-width: 600px) {
+        .nav-links {
+          flex-direction: column; /* Stack links in a column */
+          align-items: flex-start; /* Align items to the left */
+        }
+      }
+/* .hamburger {
+    padding-right: 20px;
+    cursor: pointer;
+  }
+  
+.hamburger .line {
+    display: block;
+    width: 40px;
+    height: 5px;
+    margin-bottom: 10px;
+    background-color: #202921;
+  }
+   */
+/* .nav-links {
     margin-left: 5em;
+    flex-direction: column;
+    align-items: center;
     display: none;
     position: static;
     width: auto;
@@ -74,7 +113,7 @@ html {
   }
   
   .expanded {
-    display: unset;
+    display: flex;
   }
   
   @media screen and (min-width: 636px) {
@@ -94,4 +133,4 @@ html {
     .hamburger {
         display: none;
       }
-  }
+  }  */
