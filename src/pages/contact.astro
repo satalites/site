@@ -3,6 +3,60 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import LinksSocial from '../components/LinksSocial.astro';
 ---
 <BaseLayout pageTitle="Cait Nguyen - Contact">
-    <h1>want to reach me?</h1>
-    <LinksSocial />
+    <section class="about-content">
+        <div class="abouttext-content">
+    <h1>Want to reach me?</h1>
+    <p>Find me at these links below:</p>
+    </div>
+    <div class="social-links-container">
+        <LinksSocial />
+      </div>
+    </section>
+
+
+    <style>
+        h1 {
+          margin: 0;
+        }
+    
+        .about-content {
+          max-width: 1200px;
+          margin: 0 auto;
+          padding: 2rem;
+          text-align: center; /* Center the entire content */
+          display: flex;
+          flex-direction: column;
+          align-items: center; /* Align the content center */
+          gap: 2rem;
+        }
+    
+        .abouttext-content {
+          font-size: 1.5rem;
+          text-align: center;
+        }
+    
+        .section-divider {
+          width: 100%;
+          margin: 2rem 0;
+          border: none;
+          height: 2px;
+          background-color: #ccc;
+        }
+    
+    /* Space between text and the buttons */
+    .social-links-container {
+      margin-top: 2rem;
+      display: flex;
+      justify-content: center;
+      gap: 1rem; /* Space between buttons */
+    }
+        @media (max-width: 768px) {
+          .about-content {
+            padding: 1.5rem; /* Adjust padding for smaller screens */
+          }
+          
+          .abouttext-content {
+            font-size: 1.25rem; /* Smaller font for mobile */
+          }
+        }
 </BaseLayout>

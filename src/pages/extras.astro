@@ -1,0 +1,162 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+const imageSrc0 = "/000740900006.jpg";
+const imageSrc1 = "/000740910013.jpg";
+const imageSrc2 = "/IMG_8989-2.jpg";
+---
+
+<BaseLayout pageTitle="Cait Nguyen - Creative Content & Friends">
+    <section class="extras-title">
+        <div class="extras-title-content">
+          <h1>Say hello to my creative projects and talented friends!</h1>
+          <p>
+            Keep scrolling to see a sample of my photography and a list of my wonderful friends.
+          </p>
+        </div>
+        <img src={imageSrc0} alt="">
+      </section>
+
+      <hr class="section-divider">
+
+  <section class="extras-content">
+    <div class="extrastext-content">
+      <h1>Creative Corner: Analog Photography</h1>
+      <p>
+        I have been shooting film for a couple years now, and you can find examples of my photos on my <a href="https://www.instagram.com/myhalocline/" target="_blank" class="link">Instagram</a> account.
+        This photo of UCLA's Royce Hall was taken during the golden hour of a beautiful LA day with a 35mm camera.
+      </p>
+    </div>
+    <img src={imageSrc1} alt="35mm film photo of UCLA's Royce Hall.">
+  </section>
+
+  <hr class="section-divider">
+
+  <section class="extras-content">
+    <img src={imageSrc2} alt="">
+	<div class="extrastext-content">
+    	<h1>Creative Corner: Digital Photography</h1>
+		<p>
+			I also feature my digital photos on my <a href="https://www.instagram.com/myhalocline/" target="_blank" class="link">Instagram</a> account!
+            This particular picture was taken at the stunning Hakone Gardens on my Sony Alpha 7ii.
+		</p>
+	</div>
+	</section>
+
+	<hr class="section-divider">
+	<section class="extras-content">
+		<div class="extrastext-content">
+			<h1>My wonderful friends:</h1>
+			<ul class="bullet-list">
+				<li><b>Ava Ankenbrandt</b> — UCLA Electrical Engineering '24, Starbase in TX </li>
+                <li><b>Julie Cover</b> — UCLA Computer Engineering '24, Microsoft in WA </li>
+                <li><b>Kat Nasif</b> — UCLA Computer Engineering '25, Viasat in CA </li>
+                <li><b>Cathy Wang</b> — UT Austin Mechanical Engineering '24, UCSB MS '26 </li>
+                <li><b>Tim Kanarsky</b> — UCLA Computer Science, Math '25, Tesla in CA </li>
+                <li><b>Ruth Torrence</b> — UCLA Materials Engineering '25, Entegris in MA </li>
+                <li><b>Swetha Palakur</b> — UCLA Mechanical Engineering '25, Starbase in TX </li>
+                <li><b>Jeremy Huang</b> — UCB Mechanical Engineering '25 </li>
+                <li><b>Vivian Le</b> — UCLA CS Ling '25 </li>
+                <li><b>Olivia Gettner</b> — UCSB Biopsychology '25 </li>
+                <li><b>Allison Byrnes</b> — CU Boulder Aerospace Engineering '26 </li>
+                <li><b>Genevieve Chin</b> — UCLA Computer Science '26 </li>
+                <li><b>Yuna Shegai</b> — UCLA Psychology and Anthropology '26 </li>
+                <li><b>Rebecca Meshenberg</b> — University of Edinburgh Mechanical Engineering '26</li>
+                <li><b>Sydney Terry</b> — UCLA Electrical Engineering '26 </li>
+                <li><b>Fiona Wong</b> — UCLA Electrical Engineering '26 </li>
+                <li><b>Cameron Leary</b> — UCLA Electrical Engineering '26 </li>
+                <li><b>Page Murray</b> — USC Game & Interactive Media Design '26 </li>
+                <li><b>Kayla Kelly</b> — UCM Cellular and Molecular Biology '26 </li>
+                <li><b>Mel Conti Chen</b> — UCSD Physics '26 </li>
+                <li><b>Ryan Pham</b> — UCLA Mechanical Engineering '26 </li>
+			  </ul>
+		</div>
+	</section>
+
+  <style>
+	h1{
+		margin: 0rem;
+	}
+	.section-divider {
+      width: 100%;
+      margin: 0rem 0;
+      border: none;
+      height: 2px;
+      background-color: #ccc; 
+    }
+    .extras-title {
+          max-width: 1200px;
+          margin: 0 auto;
+          padding: 2rem;
+          text-align: center; /* Center the entire content */
+          display: flex;
+          flex-direction: column;
+          align-items: center; /* Align the content center */
+          gap: 2rem;
+        }
+        .extras-title-content {
+          font-size: 1.25rem;
+          text-align: center;
+        }
+    .extras-title img{
+    max-width: 60%;
+    align-items: center;
+      height: 60%;
+      object-fit: cover;
+      border-radius: 10px; /* styling */
+    }
+
+    .link {
+      color: #729dcf;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .link:hover {
+      text-decoration: underline;
+    }
+	.bullet-list {
+      list-style-type: disc; 
+      margin-left: 20px; 
+      padding-left: 10px; 
+      font-size: 1.2rem;
+    }
+
+    .bullet-list li {
+      margin-bottom: 0.25rem; /* Adds space between items */
+    }
+    .extras-content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 1rem;
+    }
+
+    .extrastext-content {
+      flex: 1;
+	  font-size: 1.25rem;
+      text-align: left;
+    }
+
+    .extras-content img {
+      max-width: 50%;
+      height: auto;
+      object-fit: cover;
+      border-radius: 10px; /* styling */
+    }
+
+    /* stack on smaller screens */
+    @media (max-width: 768px) {
+      .extras-content {
+        flex-direction: column-reverse;
+        text-align: center;
+      }
+
+      .extras-content img {
+        max-width: 100%;
+      }
+    }
+  </style>
+</BaseLayout>

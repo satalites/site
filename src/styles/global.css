@@ -7,7 +7,7 @@ html {
   body {
     margin: 0 auto;
     width: 100%;
-    max-width: 130ch;
+    max-width: 75%;
     padding: 1rem;
     line-height: 1.5;
   }
@@ -64,7 +64,7 @@ html {
         padding: 0px 0px;
         text-decoration: none;
         font-size: 1.5rem;
-        font-weight: bold;
+        /* font-weight: bold; */
         text-transform: none;
     }
 

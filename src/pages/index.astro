@@ -7,7 +7,8 @@ const imageSrc = "/DSC_9375.jpg";
   <section class="home-content">
     <div class="text-content">
       <h1>Hello, world! My name is Cait Nguyen.</h1>
-      <p>I am a third year undergraduate student at the UCLA Samueli School of Engineering and Applied Sciences. I study electrical engineering, and I am currently a Lead Technician at the UCLA Makerspace and student instructor for the school of engineering.</p>
+      <p>I am a third year undergraduate student at the UCLA Samueli School of Engineering and Applied Sciences. 
+		I study electrical engineering, and I am currently a Lead Technician at the UCLA Makerspace and a Student Instructor for the UCLA School of Engineering.</p>
 	  <p>My resume is available upon request!</p>
     </div>
     <img src={imageSrc} alt="">
@@ -18,8 +19,44 @@ const imageSrc = "/DSC_9375.jpg";
   <section class="home-content">
 	<div class="text-content">
     	<h1>Greetings from Westwood, California!</h1>
-    	<p>This is another body of text that comes after the first section.</p>
+		<p>
+			I'm currently pursuing my bachelor's degree and expected to graduate in June of 2026.
+			My major is Electrical Engineering with a Computer Science tech breadth. 
+		</p>
+    	<p>
+			I am interested in a wide range of engineering topics ranging from machine learning to semiconductor manufacturing to lasers and photonics.
+			I have industry experience in simulating high-speed VCSELs (Vertical Cavity Surface Emitting Lasers) using multimode and singlemode fibers over a range of distances in full optical links for Coherent Corp. 
+		</p>
+		<p>
+			As a Student Instructor for UCLA's School of Engineering, I teach an introduction to machine learning class (E1 ML), where students learn the basics of machine learning Python, and PyTorch.
+			I create and present curriculum geared towards familiarizing fellow undergraduates with basic ML topics, and the class culminates in a final project where students must create a neural network trained on the NMIST dataset that correctly identifies handwritten numbers.
+		</p>
+		<p>
+			Outside of electrical engineering, I have many years of experience with CAD programs, manual and CNC machines (mills, lathes, and routers), and different types of 3D printers (FDM, SLA, and SLS). 
+			I am familiar with CAD programs such as Solidworks, Autodesk Fusion 360, and OnShape, and I use said CAD programs for CAM programming.
+			As a Makerspace technician, I use these skills to assist users in completing their personal projects with a variety of tools and machines.
+			I regularly run 3D printers, laser cutters, woodworking and metalworking machines, and several soft goods machines.
+		</p>
+		<p>
+			I am also a Publicity and Design Member for QWERHacks, UCLA's queer hackathon geared towards embracing the intersection of the queer community and tech, celebrating inclusivity, and working to better support marginalized communities.
+			I designed our PCB badges, stickers, website assets, and more!
+		</p>
 	</div>
+	</section>
+
+	<hr class="section-divider">
+	<section class="home-content">
+		<div class="text-content">
+			<h1>Outside of my academic endeavours, I am a...</h1>
+			<ul class="bullet-list">
+				<li>2nd place winner of UCLA IEEE's 2024 IdeaHacks (ask me about my project)</li>
+				<li>Traditional and digital character artist (commissions are currently open)</li>
+				<li>Classical violinist and double bassist</li>
+				<li>Digital and analog (35mm and 120 film) photographer (and film camera collector!)</li>
+				<li>L1 amateur rocketry certificate holder</li>
+				<li>Terrible runner</li>
+			  </ul>
+		</div>
 	</section>
 
   <style>
@@ -31,16 +68,26 @@ const imageSrc = "/DSC_9375.jpg";
       margin: 0rem 0;
       border: none;
       height: 2px;
-      background-color: #ccc; /* Darker line between sections */
+      background-color: #ccc; 
+    }
+	.bullet-list {
+      list-style-type: disc; 
+      margin-left: 20px; 
+      padding-left: 10px; 
+      font-size: 1.2rem;
+    }
+
+    .bullet-list li {
+      margin-bottom: 0.25rem; /* Adds space between items */
     }
     .home-content {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      gap: 2rem;
+      gap: 1rem;
       max-width: 1200px;
       margin: 0 auto;
-      padding: 2rem;
+      padding: 1rem;
     }
 
     .text-content {
