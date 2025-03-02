@@ -1,12 +1,8 @@
 ---
-import '../styles/global.css';
-import Navigation from '../components/Navigation.astro';
-import Footer from '../components/Footer.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import LinksSocial from '../components/LinksSocial.astro';
 ---
-<html>
-    <Navigation />
-    <body>
-	    <h1>want to reach me?</h1>
-    <Footer />
-    </body>
-</html>
+<BaseLayout pageTitle="contact me">
+    <h1>want to reach me?</h1>
+    <LinksSocial />
+</BaseLayout>

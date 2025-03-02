@@ -1,0 +1,49 @@
+---
+import Hamburger from './Hamburger.astro';
+import Navigation from './Navigation.astro';
+---
+<!-- <header>
+  <nav>
+    <Hamburger />
+    <Navigation />
+  </nav>
+</header> -->
+
+<header>
+    <h1>cait nguyen</h1>
+    <nav>
+      <ul>
+        <Hamburger />
+        <Navigation />
+      </ul>
+    </nav>
+  </header>
+
+  <style>
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem;
+      background: #3b403c;
+      color: white;
+      width: 100%; /* Adjusts width to 90% of the viewport */
+      max-width: 1400px; /* Prevents it from becoming too wide on large screens */
+      margin: 0 auto; /* Centers it */
+    }
+  
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1rem;
+    }
+  
+    nav a {
+      color: white;
+      text-decoration: none;
+    }
+  
+    nav a:hover {
+      text-decoration: underline;
+    }
+  </style>
