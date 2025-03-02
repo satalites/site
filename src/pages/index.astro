@@ -25,7 +25,7 @@ const imageSrc = "/DSC_9375.jpg";
 		</p>
     	<p>
 			I am interested in a wide range of engineering topics ranging from machine learning to semiconductor manufacturing to lasers and photonics.
-			I have industry experience in simulating high-speed VCSELs (Vertical Cavity Surface Emitting Lasers) using multimode and singlemode fibers over a range of distances in full optical links for Coherent Corp. 
+			I have industry experience in simulating high-speed VCSELs (Vertical Cavity Surface Emitting Lasers) using multimode and singlemode fibers over a range of distances in full optical links for Coherent Corp as an engineering intern. 
 		</p>
 		<p>
 			As a Student Instructor for UCLA's School of Engineering, I teach an introduction to machine learning class (E1 ML), where students learn the basics of machine learning Python, and PyTorch.
@@ -85,7 +85,7 @@ const imageSrc = "/DSC_9375.jpg";
       align-items: center;
       justify-content: space-between;
       gap: 1rem;
-      max-width: 1200px;
+      max-width: 100%;
       margin: 0 auto;
       padding: 1rem;
     }
@@ -105,10 +105,16 @@ const imageSrc = "/DSC_9375.jpg";
 
     /* stack on smaller screens */
     @media (max-width: 768px) {
+		h1 {
+			font-size: 2rem;
+		}
       .home-content {
         flex-direction: column-reverse;
         text-align: center;
       }
+	  .text-content{
+		font-size: 1.25rem;
+	  }
 
       .home-content img {
         max-width: 100%;

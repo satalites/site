@@ -2,15 +2,27 @@
 
 ---
 <style>
+    .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap; /* Ensures it wraps when needed */
+  }
     a {
       padding: 1rem 1rem;
       color: white;
       background-color: #3f3838;
       text-decoration: none;
       font-weight: bold;
-      margin: 3rem;
+      margin: 2rem;
       align-items: center;
     }
+
+    @media (max-width: 600px) {
+        a {
+            flex-direction: row;
+        }
+      }
   </style>
 
 <socialinks>
