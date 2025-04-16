@@ -1,1 +1,2 @@
-# site v1!
+# personal site
+done in Astro!
